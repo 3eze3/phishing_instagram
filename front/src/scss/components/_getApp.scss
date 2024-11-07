@@ -1,0 +1,12 @@
+@use "../abstract/mixins" as m;
+.getApp {
+	width: 100%;
+	@include m.flex($gap: 1rem);
+	margin-top: 0.6rem;
+	&__wrapper {
+		@include m.flex($direction: row, $gap: 0.5rem);
+	}
+	&__link {
+		height: 40px;
+	}
+}

@@ -1,0 +1,38 @@
+@use "../abstract/mixins" as m;
+.smartphone {
+	flex-basis: 432px;
+	height: 600px;
+	// outline: solid red 1px;
+	@include m.mobile() {
+		display: none;
+	}
+	&__bg {
+		width: 100%;
+		height: 100%;
+		background-image: url("../assest/images/ilustration/home-phones.png");
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: 468.32px 655px;
+	}
+
+	&__wrapper {
+		height: 100%;
+		position: relative;
+	}
+
+	&__image {
+		height: 94%;
+		top: 1.5rem;
+		left: 3.1rem;
+		object-fit: contain;
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 1.5s ease, visibility 1s ease;
+		&--show {
+			opacity: 1;
+			visibility: visible;
+			z-index: 12;
+		}
+	}
+}

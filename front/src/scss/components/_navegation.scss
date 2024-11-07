@@ -1,0 +1,9 @@
+@use "../abstract/mixins" as m;
+.nav {
+	width: fit-content;
+	padding-inline: 0.5rem;
+	&__list {
+		@include m.flex($direction: row, $gap: 1rem);
+		flex-wrap: wrap;
+	}
+}

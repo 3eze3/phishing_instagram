@@ -1,0 +1,59 @@
+body {
+	width: 100dvw;
+	height: 100dvh;
+	font-size: 100%;
+	hyphens: manual;
+	font-smooth: always;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+label {
+	color: rgb(115, 115, 115);
+}
+
+h1,
+h2,
+p,
+span,
+a {
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+
+.form__btn {
+	background-color: rgba(0, 149, 246);
+	font-weight: 600;
+	font-size: 0.9em;
+	color: #fff;
+}
+.user__or {
+	color: #737373;
+}
+
+.accounts__faccebook {
+	color: #385185;
+	font-size: 0.85em;
+	font-weight: 500;
+}
+
+.accounts__pwd {
+	color: #00376b;
+	font-size: 0.84em;
+}
+.signup__account {
+	font-size: 0.84em;
+}
+
+.signup__register {
+	font-weight: 500;
+	color: rgba(0, 149, 246);
+}
+.getApp__description {
+	font-size: 0.85em;
+}

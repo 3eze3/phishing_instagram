@@ -1,0 +1,13 @@
+@use "./base/reset";
+@use "./base/fonts";
+//
+@use "./layout/main";
+@use "./layout/footer";
+@use "./layout/user";
+//
+@use "./components/smartphone";
+@use "./components/form";
+@use "./components/navegation";
+@use "./components/accounts";
+@use "./components/signup";
+@use "./components/getApp";

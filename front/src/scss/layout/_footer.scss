@@ -1,0 +1,12 @@
+@use "../abstract/mixins" as m;
+.footer {
+	@include m.flex($justify: stretch, $gap: 1rem);
+	font-size: 13px;
+	color: rgb(115, 115, 115);
+	&__wrapper {
+		@include m.flex($direction: row, $gap: 0, $justify: stretch);
+	}
+	&__languaje {
+		width: fit-content;
+	}
+}

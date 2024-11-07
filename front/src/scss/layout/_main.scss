@@ -1,0 +1,18 @@
+@use "../abstract/mixins" as m;
+.login {
+	padding-top: 1.45rem;
+	padding-bottom: 1.4rem;
+	max-width: 960px;
+	height: 100%;
+	margin: auto;
+	@include m.flex($justify: space-around, $gap: 0);
+	&__main {
+		width: 100%;
+		@include m.flex($direction: row, $gap: 1rem);
+	}
+	&__container {
+		width: 350px;
+		height: 600px;
+		@include m.flex($justify: stretch, $gap: 0.6rem);
+	}
+}

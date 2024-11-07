@@ -1,0 +1,79 @@
+@use "../abstract/mixins" as m;
+@use "../abstract/variables" as v;
+.form {
+	@include m.flex($justify: stretch, $gap: 0.5rem);
+	&__wrapper {
+		position: relative;
+		width: 268px;
+		height: 34px;
+		@include m.flex($direction: row, $justify: stretch, $gap: 0);
+		padding-left: 0.5rem;
+		outline: rgba(219, 219, 219, 1) solid 1px;
+		border-radius: 0.1rem;
+		&:focus {
+			outline: rgb(167, 167, 167) solid 1px;
+		}
+	}
+
+	&__label {
+		width: 100%;
+		// Repeticiones
+		position: absolute;
+		font-size: 12px;
+		transition: transform 0.1s ease;
+		//
+		padding-left: 0.05rem;
+		&--active {
+			transform: translateY(-0.6rem) translateX(-1.1rem) scale(0.88);
+		}
+		&:hover {
+			cursor: text;
+		}
+	}
+
+	&__input {
+		width: calc(100% - 1rem);
+		border-radius: 0.1rem;
+		// Repeticiones
+		position: absolute;
+		font-size: 12px;
+		transition: transform 0.1s ease;
+		// Repeticiones
+		&--active {
+			transform: translateY(0.4rem);
+		}
+
+		&:focus {
+			outline: none;
+		}
+		&--pwd {
+			width: calc(100% - 4rem);
+		}
+	}
+
+	&__pwdShow {
+		position: absolute;
+		right: 0.5rem;
+		font-weight: 500;
+		font-size: 14px;
+		color: #262626;
+		visibility: hidden;
+		&:hover {
+			cursor: pointer;
+			color: color-mix(in srgb, #000 60%, #fff 40%);
+		}
+
+		&--active {
+			visibility: visible;
+		}
+	}
+
+	&__btn {
+		background-color: rgb(0, 149, 246);
+		color: #fff;
+		width: 100%;
+		padding-block: 0.35rem;
+		border-radius: 0.5rem;
+		margin-top: 0.38rem;
+	}
+}
