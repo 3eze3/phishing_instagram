@@ -1,0 +1,394 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before,
+*::after {
+  display: block;
+}
+
+img,
+picture {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+a {
+  display: inline;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  appearance: none;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  font-size: 100%;
+  hyphens: manual;
+  font-smooth: always;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+label {
+  color: rgb(115, 115, 115);
+}
+
+h1,
+h2,
+p,
+span,
+a {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.form__btn {
+  background-color: rgb(0, 149, 246);
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.user__or {
+  color: #737373;
+}
+
+.accounts__faccebook {
+  color: #385185;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.accounts__pwd {
+  color: #00376b;
+  font-size: 0.84em;
+}
+
+.signup__account {
+  font-size: 0.84em;
+}
+
+.signup__register {
+  font-weight: 500;
+  color: rgb(0, 149, 246);
+}
+
+.getApp__description {
+  font-size: 0.85em;
+}
+
+.login {
+  padding-top: 1.45rem;
+  padding-bottom: 1.4rem;
+  max-width: 960px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0;
+}
+.login__main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.login__container {
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  gap: 0.6rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  gap: 1rem;
+  font-size: 13px;
+  color: rgb(115, 115, 115);
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  gap: 0;
+}
+.footer__languaje {
+  width: fit-content;
+}
+
+.user {
+  width: 100%;
+  border: 1px solid rgb(219, 219, 219);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  gap: 1.9rem;
+  padding: 2rem 2rem 1.6rem 2rem;
+}
+.user__logo {
+  width: 175px;
+  height: 51px;
+  margin-block: 0.75rem;
+  background-image: url("../assest/images/icons/instagram.png");
+  background-repeat: no-repeat;
+  background-position: 0 -51px;
+  background-size: cover;
+}
+.user__decoration {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  gap: 1.35rem;
+}
+.user__line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(219, 219, 219);
+}
+.user__or {
+  font-size: small;
+}
+.user__accounts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.smartphone {
+  flex-basis: 432px;
+  height: 600px;
+}
+@media (width <= 835px) {
+  .smartphone {
+    display: none;
+  }
+}
+.smartphone__bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assest/images/ilustration/home-phones.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 468.32px 655px;
+}
+.smartphone__wrapper {
+  height: 100%;
+  position: relative;
+}
+.smartphone__image {
+  height: 94%;
+  top: 1.5rem;
+  left: 3.1rem;
+  object-fit: contain;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.5s ease, visibility 1s ease;
+}
+.smartphone__image--show {
+  opacity: 1;
+  visibility: visible;
+  z-index: 12;
+}
+
+@font-face {
+  font-family: "";
+  src: local(), url() format(), url() format(), url() format();
+}
+@font-face {
+  font-family: "";
+  src: local(), url() format(), url() format(), url() format();
+}
+@font-face {
+  font-family: "";
+  src: local(), url() format(), url() format(), url() format();
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  gap: 0.5rem;
+}
+.form__wrapper {
+  position: relative;
+  width: 268px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  gap: 0;
+  padding-left: 0.5rem;
+  outline: rgb(219, 219, 219) solid 1px;
+  border-radius: 0.1rem;
+}
+.form__wrapper:focus {
+  outline: rgb(167, 167, 167) solid 1px;
+}
+.form__label {
+  width: 100%;
+  position: absolute;
+  font-size: 12px;
+  transition: transform 0.1s ease;
+  padding-left: 0.05rem;
+}
+.form__label--active {
+  transform: translateY(-0.6rem) translateX(-1.1rem) scale(0.88);
+}
+.form__label:hover {
+  cursor: text;
+}
+.form__input {
+  width: calc(100% - 1rem);
+  border-radius: 0.1rem;
+  position: absolute;
+  font-size: 12px;
+  transition: transform 0.1s ease;
+}
+.form__input--active {
+  transform: translateY(0.4rem);
+}
+.form__input:focus {
+  outline: none;
+}
+.form__input--pwd {
+  width: calc(100% - 4rem);
+}
+.form__pwdShow {
+  position: absolute;
+  right: 0.5rem;
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+  visibility: hidden;
+}
+.form__pwdShow:hover {
+  cursor: pointer;
+  color: color-mix(in srgb, #000 60%, #fff 40%);
+}
+.form__pwdShow--active {
+  visibility: visible;
+}
+.form__btn {
+  background-color: rgb(0, 149, 246);
+  color: #fff;
+  width: 100%;
+  padding-block: 0.35rem;
+  border-radius: 0.5rem;
+  margin-top: 0.38rem;
+}
+
+.nav {
+  width: fit-content;
+  padding-inline: 0.5rem;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.accounts__button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
+.accounts__logo {
+  width: 1rem;
+}
+
+.signup {
+  border: 1px solid rgb(219, 219, 219);
+  width: 100%;
+  height: 61px;
+  text-align: center;
+  line-height: 61px;
+}
+
+.getApp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.6rem;
+}
+.getApp__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.getApp__link {
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
