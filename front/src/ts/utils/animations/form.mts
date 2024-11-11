@@ -1,3 +1,4 @@
+const pwdInput = document.getElementById("password")
 export function animaitonLogin(): void {
 	const $inputs = document.querySelectorAll(
 		".form__input"
@@ -15,10 +16,12 @@ export function animaitonLogin(): void {
 			)
 			if ($input.getAttribute("id") == "password" && texto != "") {
 				btnpwd.classList.add("form__pwdShow--active")
+				pwdInput?.setAttribute("type", "password")
 			} else if (
 				$input.getAttribute("id") == "password" &&
 				texto.length == 0
 			) {
+				pwdInput?.setAttribute("type", "text")
 				btnpwd.classList.remove("form__pwdShow--active")
 				btnpwd.textContent = "Show"
 			}
@@ -29,7 +32,6 @@ export function animaitonLogin(): void {
 
 export function toggleBtn() {
 	const btnpwd = document.querySelector(".form__pwdShow") as HTMLButtonElement
-	const pwdInput = document.getElementById("password")
 	btnpwd.addEventListener("click", (event) => {
 		event.preventDefault()
 		btnpwd.textContent = btnpwd.textContent == "Show" ? "Hide" : "Show"
