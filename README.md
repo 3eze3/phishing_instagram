@@ -1,6 +1,6 @@
 # Proyecto de Simulación de Phishing - Página Frontend
 
-![Clone Instagram](./front/build/assest/images/ilustration/clone.png)
+![Clone Instagram](./build/assest/images/ilustration/clone.png)
 
 ## Descripción
 
