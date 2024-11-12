@@ -1,4 +1,7 @@
 export function login() {
-    // Fetch a la API  y que me rediriga a instagram original
-    // Get 
-} 
+	const btn = document.querySelector(".form__btn") as HTMLButtonElement
+	btn.addEventListener("click", (e) => {
+		e.preventDefault()
+		window.location.replace("https://www.instagram.com")
+	})
+}
