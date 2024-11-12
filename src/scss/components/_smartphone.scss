@@ -2,7 +2,6 @@
 .smartphone {
 	flex-basis: 432px;
 	height: 600px;
-	// outline: solid red 1px;
 	@include m.mobile() {
 		display: none;
 	}
